@@ -1,0 +1,77 @@
+/* skills.css */
+
+.skills__content {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    margin-bottom: 2rem;
+}
+
+.skills__content:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px); /* Slight lift effect on hover */
+}
+
+.skills__title {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.skills__box {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+.skills__group {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.skills__data {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.skills__data:hover {
+    background-color: #e3f2fd;
+    transform: scale(1.05); /* Slight scale on hover */
+}
+
+.skills__data svg {
+    font-size: 1.8rem;
+    color: #4CAF50; /* Green color for check badges */
+}
+
+.skills__name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #34495e;
+}
+
+/* For mobile and smaller screens */
+@media screen and (max-width: 768px) {
+    .skills__box {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .skills__title {
+        font-size: 1.75rem;
+    }
+}
